@@ -86,7 +86,6 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🔍 Search bar
             TextField(
               controller: searchController,
               decoration: InputDecoration(
@@ -107,7 +106,6 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 15),
 
-            // 🏷️ Categories Scroll
             SizedBox(
               height: 40,
               child: ListView.builder(
@@ -138,7 +136,6 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 15),
 
-            // 🛍️ Products grid
             Expanded(
               child: FutureBuilder<List<Product>>(
                 future: productsFuture,

@@ -1,4 +1,3 @@
-// lib/models/product.dart
 class Product {
   final int id;
   final String title;
@@ -7,7 +6,6 @@ class Product {
   final String category;
   final String image;
 
-  // حقل قابل للتعديل لتخزين الكمية
   int quantity;
 
   Product({

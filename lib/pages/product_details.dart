@@ -29,7 +29,6 @@ class ProductDetailsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 🖼️ Product Image
             Center(
               child: Image.network(
                 product.image,
@@ -39,7 +38,6 @@ class ProductDetailsPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // 📌 Title
             Text(
               product.title,
               style: const TextStyle(
@@ -69,7 +67,6 @@ class ProductDetailsPage extends StatelessWidget {
 
             const SizedBox(height: 12),
 
-            // 📄 Description
             Text(
               product.description,
               style: const TextStyle(color: Colors.black87, fontSize: 14),
@@ -77,7 +74,6 @@ class ProductDetailsPage extends StatelessWidget {
 
             const Spacer(),
 
-            // 💰 Price & Button
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -99,7 +95,6 @@ class ProductDetailsPage extends StatelessWidget {
                 ),
                 ElevatedButton.icon(
                   onPressed: () {
-                    // ✅ Add to Cart
                     cartItems.add(product);
 
                     ScaffoldMessenger.of(context).showSnackBar(
