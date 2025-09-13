@@ -48,7 +48,6 @@ class ProductDetailsPage extends StatelessWidget {
 
             const SizedBox(height: 8),
 
-            // ⭐ Rating & Reviews
             Row(
               children: const [
                 Icon(Icons.star, color: Colors.orange, size: 18),
